@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Odyssey Character Codex</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ΚΕΦΑΛΙΔΑ -->
+  <header class="header">
+    <h1>Χαρακτήρες Οδέσσειας</h1>
+    <p>Μυθολογική Βάση Δεδομένων</p>
+  </header>
+
+  <!-- ΚΥΡΙΑ ΠΕΡΙΟΧΗ (GRID ΧΑΡΑΚΤΗΡΩΝ) -->
+  <main>
+
+  <div class="grid">
+
+    <!-- ΟΔΥΣΣΕΑΣ -->
+    <div class="card" data-id="odysseus">
+      <img src="assets/odysseus.jpg" class="card-img">
+      <h3>Οδυσσέας</h3>
+      <p>Ήρωας • Στρατηγός</p>
+    </div>
+
+    <!-- ΑΘΗΝΑ -->
+    <div class="card" data-id="athena">
+      <img src="assets/athena.jpg" class="card-img">
+      <h3>Αθηνά</h3>
+      <p>Θεά • Σοφία</p>
+    </div>
+
+    <!-- ΠΟΣΕΙΔΩΝΑΣ -->
+    <div class="card" data-id="poseidon">
+      <img src="assets/poseidon.jpg" class="card-img">
+      <h3>Ποσειδώνας</h3>
+      <p>Θεός • Θάλασσα</p>
+    </div>
+
+    <!-- ΠΗΝΕΛΟΠΗ -->
+    <div class="card" data-id="penelope">
+      <img src="assets/penelope.jpg" class="card-img">
+      <h3>Πηνελόπη</h3>
+      <p>Άνθρωπος • Πίστη</p>
+    </div>
+
+    <!-- ΚΑΛΥΨΩ -->
+    <div class="card" data-id="calypso">
+      <img src="assets/calypso.jpg" class="card-img">
+      <h3>Καλυψώ</h3>
+      <p>Νύμφη • Απομόνωση</p>
+    </div>
+
+    <!-- ΠΟΛΥΦΗΜΟΣ -->
+    <div class="card" data-id="polyphemus">
+      <img src="assets/polyphemus.jpg" class="card-img">
+      <h3>Πολύφημος</h3>
+      <p>Κύκλωπας • Απειλή</p>
+    </div>
+
+  </div>
+
+</main>
+
+  <!-- MODAL (θα ανοίγει με JS αργότερα) -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+
+  <span class="close" id="closeBtn">&times;</span>
+
+  <img id="modalImg" class="modal-img">
+
+  <h2 id="modalTitle"></h2>
+  <p id="modalRole"></p>
+
+  <div id="modalTraits"></div>
+  <div id="modalDesc"></div>
+
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
